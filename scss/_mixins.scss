@@ -1,0 +1,4 @@
+@mixin sprite($width,$sprite) {
+    width: $width; height: 48px;
+    background: url('../../images/css_sprites.png') $sprite;
+}

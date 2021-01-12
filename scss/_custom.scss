@@ -1,10 +1,13 @@
 @import "variables";
 $container-max-widths: (
-  xl: 1170px,
+  xl: 1140px,
 ) !default;
-$font-family-sans-serif: "Oswald", sans-serif;
+$font-family-sans-serif: "Open Sans", sans-serif;
 $font-weight-base: 300;
-$body-color: $body-color-default;
-$navbar-nav-link-padding-x: 26px;
+// $body-color: $body-color-default;
 $nav-link-font-size: 14px;
-$nav-link-color: #fff;
+$navbar-dark-color: #a4aead;
+$navbar-dark-hover-color:  #a4aead;
+$navbar-dark-active-color: $main-color;
+// $navbar-nav-link-padding-x: ; 
+$navbar-padding-y: 7px;
