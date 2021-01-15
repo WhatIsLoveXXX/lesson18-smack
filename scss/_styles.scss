@@ -58,21 +58,21 @@
   border-left: 10px solid #e1e6ea;
   letter-spacing: -2px;
   line-height: 36px;
-  font-family: "Quattrocento Sans", sans-serif;
+  font-family: $font-quattrocento;
 }
 
 .item {
   text-align: center;
   margin-bottom: 40px;
-  font-family: "Quattrocento Sans", sans-serif;
+  font-family: $font-quattrocento;
   font-weight: 600;
-  padding-left: 10px;
+  // padding-left: 20px;
   padding-right: 0;
   max-width: 330px;
 
-  &:first-child {
-    padding-right: 0px;
-    padding-left: 0px;
+  @include media-breakpoint-up(lg) {
+    padding-left: 10px;
+    padding-right: 10px;
   }
 
   span {
@@ -81,34 +81,36 @@
     margin-bottom: 31px;
   }
 
-  &-1 {
-    @include sprite($sprite-width, $bg-sprite1);
-  }
-
-  &-2 {
-    @include sprite($sprite-width, $bg-sprite2);
-  }
-
-  &-3 {
-    @include sprite($sprite-width3, $bg-sprite3);
-  }
-
-  &-4 {
-    @include sprite($sprite-width, $bg-sprite4);
-  }
   h2 {
     font-size: 17px;
     font-weight: 600;
     margin-bottom: 19px;
     letter-spacing: -0.5px;
+    color: #292f36;
   }
   p {
     font-family: "Open Sans", sans-serif;
     font-weight: 400;
     line-height: 26px;
-    max-width: 275px;
+    color: #8d8f92;
     @include media-breakpoint-up(lg) {
       margin-bottom: 47px;
     }
   }
+}
+
+.ico-setup {
+  @include sprite($sprite-width, $bg-sprite1);
+}
+
+.ico-design {
+  @include sprite($sprite-width, $bg-sprite2);
+}
+
+.ico-display {
+  @include sprite($sprite-width3, $bg-sprite3);
+}
+
+.ico-support {
+  @include sprite($sprite-width, $bg-sprite4);
 }
